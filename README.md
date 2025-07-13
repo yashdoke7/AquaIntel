@@ -70,6 +70,7 @@ AquaIntel/
 ├── astar_weather.py → Pathfinding with SQL
 ├── fetch_weather.py → API fetch + weight calculation
 ├── store_update_weather.py → Fetch and store data in MySQL
+├── requirements.txt
 └── README.md
 
 
@@ -77,9 +78,10 @@ AquaIntel/
 ## 🏁 How to Run
 
 1. Clone the repo  
-   ```bash
-   git clone https://github.com/yashdoke7/AquaIntel.git
-   cd AquaIntel
+  ```bash
+  git clone https://github.com/yashdoke7/AquaIntel.git
+  cd AquaIntel
+  ```
 
 2. Install dependencies
   ```bash
@@ -102,10 +104,10 @@ AquaIntel/
 📸 Screenshots
 
 
-<img width="2559" height="1476" alt="image" src="https://github.com/user-attachments/assets/daa12b2f-7a6f-4514-abd4-897a455853a8" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/daa12b2f-7a6f-4514-abd4-897a455853a8" />
 
 
-<img width="2559" height="1476" alt="image" src="https://github.com/user-attachments/assets/9d6c1155-83ee-40a3-bc26-527108084d1c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9d6c1155-83ee-40a3-bc26-527108084d1c" />
 
 
 ---
