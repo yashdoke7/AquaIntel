@@ -1,3 +1,18 @@
+// Mobile menu toggle function
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+
+// Close menu when clicking on map (mobile)
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('map').addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+            document.getElementById('menu').classList.remove('active');
+        }
+    });
+});
+
 // Initialize the Leaflet map
 const map = L.map('map').setView([18.525514, 73.846069], 5);
 
@@ -59,8 +74,9 @@ function addPolyline(coordinates, color = 'blue') {
     }
 }
 
-// Event listener for the "Calculate Route" button
+// Enhanced event listener for the "Calculate Route" button with loading animation
 document.getElementById('calculateRouteButton').addEventListener('click', function () {
+    const button = this;
     const startLat = parseFloat(document.getElementById('startPointLatitude').value);
     const startLng = parseFloat(document.getElementById('startPointLongitude').value);
     const endLat = parseFloat(document.getElementById('endPointLatitude').value);
@@ -69,7 +85,11 @@ document.getElementById('calculateRouteButton').addEventListener('click', functi
     console.log(`Calculate Route Button Clicked: Start (${startLat}, ${startLng}) -> End (${endLat}, ${endLng})`);
 
     if (isValidCoordinates(startLat, startLng, endLat, endLng)) {
-        calculateRoute(startLat, startLng, endLat, endLng);
+        // Add loading animation
+        button.classList.add('loading');
+        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Calculating...';
+        
+        calculateRoute(startLat, startLng, endLat, endLng, button);
     } else {
         alert("Please enter valid coordinates for both start and end points.");
     }
@@ -88,7 +108,7 @@ function isValidCoordinates(startLat, startLng, endLat, endLng) {
 }
 
 // Function to send route data to the FastAPI backend
-function calculateRoute(startLat, startLng, endLat, endLng) {
+function calculateRoute(startLat, startLng, endLat, endLng, button) {
     console.log("Sending route calculation request to backend...");
 
     fetch("http://127.0.0.1:8000/calculate-route", {
@@ -133,7 +153,15 @@ function calculateRoute(startLat, startLng, endLat, endLng) {
                 alert("No valid route found. Please try again.");
             }
         })
-        .catch(error => console.error("Error calculating route:", error));
+        .catch(error => {
+            console.error("Error calculating route:", error);
+            alert("Error calculating route. Please check your connection and try again.");
+        })
+        .finally(() => {
+            // Remove loading animation
+            button.classList.remove('loading');
+            button.innerHTML = '<i class="fas fa-route"></i> Calculate Route';
+        });
 }
 
 // Helper function to compare two coordinate arrays
@@ -148,3 +176,8 @@ function arraysEqual(arr1, arr2) {
 
 // Attach click listener to the map
 map.on('click', onMapClick);
+
+// Auto-resize map on window resize
+window.addEventListener('resize', function() {
+    map.invalidateSize();
+});
