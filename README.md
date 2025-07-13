@@ -57,6 +57,7 @@ If you want to run individual runnable scripts, you can run `astar_with_api` or 
 ---
 
 📁 Project Structure
+```
 AquaIntel/
 ├── Core/
 │ ├── astar_weather_with_api.py → API-only alternative version
@@ -72,7 +73,7 @@ AquaIntel/
 ├── store_update_weather.py → Fetch and store data in MySQL
 ├── requirements.txt
 └── README.md
-
+```
 
 
 ## 🏁 How to Run
