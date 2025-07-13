@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AinSea Map with Enhanced Routing</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+<div class="container">
+    <!-- Left-side menu for inputs -->
+    <div class="menu" id="menu">
+        <h2>Route Planner</h2>
+        <label for="start">Start Point Latitude:</label>
+        <input type="text" id="startPointLatitude" placeholder="Enter start point Latitude:">
+
+        <label for="start">Start Point Longitude:</label>
+        <input type="text" id="startPointLongitude" placeholder="Enter start point Longitude:">
+
+        <label for="end">End Point Latitude:</label>
+        <input type="text" id="endPointLatitude" placeholder="Enter end point Latitude:">
+
+        <label for="end">End Point Longitude:</label>
+        <input type="text" id="endPointLongitude" placeholder="Enter end point Longitude:">
+
+        <button id="calculateRouteButton">Calculate Route</button>
+        <div id="routeOptions">
+            <h3>Route Options</h3>
+            <ul>
+                <li><span class="route-symbol">S</span> Shortest Route</li>
+                <li><span class="route-symbol">F</span> Fastest Route</li>
+                <li><span class="route-symbol">E</span> Most Fuel Efficient Route</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Map container -->
+    <div id="map"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
