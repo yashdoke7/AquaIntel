@@ -3,7 +3,7 @@ from datetime import datetime
 # Initialize global variables for the weather routing algorithm
 def initialization():
     global api_key, base_url, weight_coefficients, max_values, step_size
-    api_key = "7bca9eec76f3a30530ab2c217ea25926"
+    api_key = "api_key"
     base_url = "https://api.openweathermap.org/data/2.5/weather"
     step_size = 0.1
 

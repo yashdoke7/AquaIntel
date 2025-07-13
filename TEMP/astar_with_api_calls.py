@@ -6,7 +6,7 @@ from global_land_mask import globe
 import time
 import mysql.connector
 
-api_key = "7bca9eec76f3a30530ab2c217ea25926"
+api_key = "api_key"
 base_url = "https://api.openweathermap.org/data/2.5/weather"
 
 global result, step_size

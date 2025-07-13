@@ -7,7 +7,7 @@ from global_land_mask import globe
 # Initialize global variables for the weather routing algorithm
 def initialization():
     global api_key, base_url, weight_coefficients, max_values, step_size
-    api_key = "c61b0711dbf0b47d2f609a668f701e3e"
+    api_key = "api_key"
     base_url = "https://api.openweathermap.org/data/2.5/weather"
     step_size = 0.1  # Adjust step size as needed
 
