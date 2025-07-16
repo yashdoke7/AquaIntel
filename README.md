@@ -32,6 +32,8 @@ AquaIntel is a pathfinding-based application that calculates the shortest route 
 - `requests`, `mysql-connector-python`, `matplotlib`, `folium`
 - A MySQL database with the required port and weather schema
 
+### Note: The `store_weather_data.py` takes around 2.5 hours to store in SQL Database.
+
 ### For MySQL version
 
 For SQL version use `astar_weather.py` file
