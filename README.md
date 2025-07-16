@@ -92,9 +92,11 @@ AquaIntel/
 3. Set up .env with your OpenWeatherMap API key:
   ```bash
   OPENWEATHER_API_KEY=your_key_here
-  Configure MySQL database (optional)
   ```
-4. Run:
+
+4. Configure MySQL database (optional)
+
+5. Run:
   ```bash
   python main.py
   ```
