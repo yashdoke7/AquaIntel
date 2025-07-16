@@ -94,7 +94,17 @@ AquaIntel/
   OPENWEATHER_API_KEY=your_key_here
   ```
 
-4. Configure MySQL database (optional)
+4. Configure MySQL database
+
+  ```bash
+  CREATE TABLE IF NOT EXISTS weather_data (
+    latitude DECIMAL(10, 8) NOT NULL,
+    longitude DECIMAL(11, 8) NOT NULL,
+    weight FLOAT NOT NULL,
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+     PRIMARY KEY (latitude, longitude)
+  )
+  ```
 
 5. Run:
   ```bash
