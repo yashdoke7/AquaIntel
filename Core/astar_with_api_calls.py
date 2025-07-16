@@ -4,7 +4,6 @@ import numpy as np
 import heapq
 from global_land_mask import globe
 import time
-import mysql.connector
 
 api_key = "api_key"
 base_url = "https://api.openweathermap.org/data/2.5/weather"
@@ -157,15 +156,6 @@ async def fetch_weather_data(session, lat, lon):
             print(f"Error retrieving data for point ({lat}, {lon})")
             print(response.status)
             return None
-
-def connect_db():
-    return mysql.connector.connect(
-        database="AquaIntel",
-        user="root",
-        password="password",
-        host="127.0.0.1",
-        port=3306
-    )
 
 async def main():
     lat_buffer = 1
