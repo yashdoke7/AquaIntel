@@ -33,7 +33,7 @@ class RouteRequest(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 def serve_map_ui():
-    with open("static/", "r") as file:
+    with open("static/index.html", "r") as file:
         html_content = file.read()
     return HTMLResponse(content=html_content)
 
