@@ -111,7 +111,7 @@ function isValidCoordinates(startLat, startLng, endLat, endLng) {
 function calculateRoute(startLat, startLng, endLat, endLng, button) {
     console.log("Sending route calculation request to backend...");
 
-    fetch("https://your-fastapi-backend.onrender.com/calculate-route", {
+    fetch("http://127.0.0.1:8000/calculate-route", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

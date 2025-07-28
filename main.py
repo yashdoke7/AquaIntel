@@ -11,7 +11,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://aqua-intel.vercel.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -31,9 +31,9 @@ class RouteRequest(BaseModel):
     end_latitude: float
     end_longitude: float
 
-@app.get("/mapsui", response_class=HTMLResponse)
+@app.get("/", response_class=HTMLResponse)
 def serve_map_ui():
-    with open("static/mapsui.html", "r") as file:
+    with open("static/", "r") as file:
         html_content = file.read()
     return HTMLResponse(content=html_content)
 
