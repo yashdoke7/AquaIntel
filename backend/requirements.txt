@@ -1,0 +1,9 @@
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+mysql-connector-python>=8.2.0
+numpy>=1.24.0
+global-land-mask>=1.0.0
+aiohttp>=3.9.0
+requests>=2.31.0

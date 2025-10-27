@@ -1,9 +1,0 @@
-aiohttp
-asyncio
-numpy
-global-land-mask
-mysql-connector-python
-aiomysql
-fastapi
-pydantic
-uvicorn

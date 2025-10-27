@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'leaflet/dist/leaflet.css';
+
+/* Fix Leaflet container height */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* AquaIntel Maritime Design System - Oceanic Theme
+All colors MUST be HSL. Maritime-inspired color palette.
+*/
+
+@layer base {
+  :root {
+    /* Ocean-inspired background and surfaces */
+    --background: 210 45% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 210 40% 99%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 210 40% 99%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Deep ocean primary - Navy blue */
+    --primary: 215 85% 25%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 215 85% 35%;
+
+    /* Ocean secondary - Lighter ocean blue */
+    --secondary: 200 35% 92%;
+    --secondary-foreground: 215 25% 20%;
+
+    /* Muted ocean tones */
+    --muted: 200 25% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Aqua accent */
+    --accent: 185 85% 85%;
+    --accent-foreground: 215 25% 20%;
+
+    /* Warning/danger - Coral reef */
+    --destructive: 15 85% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs - Light ocean */
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 215 85% 35%;
+
+    /* Success - Sea green */
+    --success: 150 60% 45%;
+    --success-foreground: 210 40% 98%;
+
+    /* Warning - Sunset orange */
+    --warning: 35 85% 60%;
+    --warning-foreground: 215 25% 15%;
+
+    /* Ocean gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(215 85% 25%), hsl(200 70% 35%));
+    --gradient-waves: linear-gradient(180deg, hsl(200 35% 92%), hsl(185 85% 95%));
+    --gradient-deep: linear-gradient(135deg, hsl(215 85% 15%), hsl(215 85% 25%));
+
+    /* Shadows with ocean theme */
+    --shadow-ocean: 0 10px 30px -5px hsl(215 85% 25% / 0.2);
+    --shadow-wave: 0 4px 20px -2px hsl(200 70% 35% / 0.15);
+
+    /* Animation and transitions */
+    --transition-wave: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
