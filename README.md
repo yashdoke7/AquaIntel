@@ -409,7 +409,6 @@ See the [Issues](https://github.com/yashdoke7/AquaIntel/issues) page for known b
 ⭐ Star this repository if you find it helpful!
 
 </div>
-```
 
 ---
 
