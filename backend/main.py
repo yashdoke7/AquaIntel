@@ -27,8 +27,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
 # Pydantic Models
 class Coordinate(BaseModel):
     lat: float
