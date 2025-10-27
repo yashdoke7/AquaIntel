@@ -44,10 +44,6 @@ AquaIntel is an intelligent ocean navigation tool that calculates optimal mariti
 <img width="2537" height="1470" alt="image" src="https://github.com/user-attachments/assets/8bccb33c-4057-4e3c-94a7-ae357060ef81" />
 
 
-### Recent Routes Management
-<img width="2559" height="1476" alt="image" src="https://github.com/user-attachments/assets/a8a06d77-5522-461b-8332-b886df6397cc" />
-
-
 ---
 
 ## 🏗️ Architecture
