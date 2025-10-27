@@ -397,7 +397,7 @@ See the [Issues](https://github.com/yashdoke7/AquaIntel/issues) page for known b
 
 
 ### Recent Routes
-<img width="2537" height="1475" alt="image" src="https://github.com/user-attachments/assets/be8aece7-c0ab-423a-b184-51bb6ef20397" />
+<img width="2559" height="1477" alt="image" src="https://github.com/user-attachments/assets/1c103064-38c4-4af1-834c-980607279321" />
 
 
 ---
