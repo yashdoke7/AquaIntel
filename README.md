@@ -1,4 +1,4 @@
-<img width="2537" height="1477" alt="image" src="https://github.com/user-attachments/assets/481ea0b6-f2c5-4905-99a8-5193d66d76ea" /># 🌊 AquaIntel - Maritime Route Intelligence
+# 🌊 AquaIntel - Maritime Route Intelligence
 
 <div align="center">
 
@@ -382,6 +382,37 @@ See the [Issues](https://github.com/yashdoke7/AquaIntel/issues) page for known b
 
 ---
 
+## 📸 Screenshots
+
+### Landing Page
+<img width="2539" height="1476" alt="image" src="https://github.com/user-attachments/assets/1e04368d-96e5-49d8-9709-bbd7b99a9edf" />
+
+
+### Route Planning
+<img width="2537" height="1477" alt="image" src="https://github.com/user-attachments/assets/9417b1fe-823e-479d-bae2-4c74c996a7f6" />
+
+
+### Weather Overview
+<img width="2537" height="1475" alt="image" src="https://github.com/user-attachments/assets/423c2e9f-6ea5-4c31-a9ea-f2bcd8c30c41" />
+
+
+### Recent Routes
+<img width="2537" height="1475" alt="image" src="https://github.com/user-attachments/assets/be8aece7-c0ab-423a-b184-51bb6ef20397" />
+
+
+---
+
+<div align="center">
+
+**Built with ❤️ for safer maritime navigation**
+
+⭐ Star this repository if you find it helpful!
+
+</div>
+```
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -407,34 +438,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [FastAPI](https://fastapi.tiangolo.com/) for the amazing backend framework
 
 ---
-
-## 📸 Screenshots
-
-### Landing Page
-![Landing Page]<img width="2539" height="1476" alt="image" src="https://github.com/user-attachments/assets/1e04368d-96e5-49d8-9709-bbd7b99a9edf" />
-
-
-### Route Planning
-![Route Planning]<img width="2537" height="1477" alt="image" src="https://github.com/user-attachments/assets/9417b1fe-823e-479d-bae2-4c74c996a7f6" />
-
-
-### Weather Overview
-![Weather Overview]<img width="2537" height="1475" alt="image" src="https://github.com/user-attachments/assets/423c2e9f-6ea5-4c31-a9ea-f2bcd8c30c41" />
-
-
-### Recent Routes
-![Recent Routes]<img width="2537" height="1475" alt="image" src="https://github.com/user-attachments/assets/be8aece7-c0ab-423a-b184-51bb6ef20397" />
-
-
----
-
-<div align="center">
-
-**Built with ❤️ for safer maritime navigation**
-
-⭐ Star this repository if you find it helpful!
-
-</div>
-```
 
 ***
