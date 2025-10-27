@@ -437,6 +437,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Leaflet](https://leafletjs.com/) for interactive maps
 - [FastAPI](https://fastapi.tiangolo.com/) for the amazing backend framework
 
----
-
 ***
