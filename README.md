@@ -420,7 +420,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - GitHub: [@yashdoke7](https://github.com/yashdoke7)
 - LinkedIn: [Yash Doke](https://www.linkedin.com/in/yash-doke/)
-- Email: yashdoke62@gmail.com
+- Email: yashdoke215@gmail.com
 
 ---
 
